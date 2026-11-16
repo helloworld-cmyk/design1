@@ -1,0 +1,199 @@
+  <section class="dash-row dash-row--incidents" id="su-co-dang-mo">
+    <article class="panel reveal" aria-labelledby="incidentsTitle">
+      <div class="panel-head">
+        <div>
+          <h2 id="incidentsTitle">Sự cố đang mở</h2>
+          <p>3 sự cố chưa khép lại · SLA phản hồi 15 phút</p>
+        </div>
+        <a class="text-link" href="admin-chuyen.html">
+          Mở quản lý chuyến
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+        </a>
+      </div>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="sr-only">
+            Sự cố đang mở kèm thời gian trôi, trạng thái và lối xử lý tại A2
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Mã chuyến</th>
+              <th scope="col">Loại sự cố</th>
+              <th scope="col" class="hide-sm">Tài xế</th>
+              <th scope="col">Thời gian trôi</th>
+              <th scope="col">Trạng thái</th>
+              <th scope="col">Thao tác</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-su-co="mo" data-tuoi="22">
+              <th scope="row">CN-1042</th>
+              <td>Tài xế đến muộn</td>
+              <td class="hide-sm">Trần Thị H.</td>
+              <td>22 phút trước</td>
+              <td>
+                <span class="badge-stack">
+                  <span class="status-badge sb--orange">Mở</span>
+                  <span class="status-badge sb--red">Chưa nhận xử lý</span>
+                </span>
+              </td>
+              <td>
+                <a class="btn btn-ghost btn-sm" href="admin-chuyen.html">
+                  Xử lý tại A2
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-arrow-right"></use>
+                  </svg>
+                </a>
+              </td>
+            </tr>
+            <tr data-su-co="dang-xu-ly" data-tuoi="9">
+              <th scope="row">CN-1039</th>
+              <td>Xe hỏng dọc đường</td>
+              <td class="hide-sm">Lê Quốc B.</td>
+              <td>9 phút trước</td>
+              <td><span class="status-badge sb--sky">Đang xử lý</span></td>
+              <td>
+                <a class="btn btn-ghost btn-sm" href="admin-chuyen.html">
+                  Xử lý tại A2
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-arrow-right"></use>
+                  </svg>
+                </a>
+              </td>
+            </tr>
+            <tr data-su-co="mo" data-tuoi="4">
+              <th scope="row">CN-1045</th>
+              <td>Khách khiếu nại ghế</td>
+              <td class="hide-sm">Nguyễn Văn M.</td>
+              <td>4 phút trước</td>
+              <td><span class="status-badge sb--orange">Mở</span></td>
+              <td>
+                <a class="btn btn-ghost btn-sm" href="admin-chuyen.html">
+                  Xử lý tại A2
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-arrow-right"></use>
+                  </svg>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <section class="dash-row dash-row--monitor">
+    <article class="panel reveal" aria-labelledby="alertsTitle">
+      <div class="panel-head">
+        <div>
+          <h2 id="alertsTitle">Cảnh báo bất thường</h2>
+          <p>3 cảnh báo trong 24 giờ qua</p>
+        </div>
+      </div>
+      <ul class="alert-list">
+        <li class="alert-item alert-item--red">
+          <span class="alert-icon" aria-hidden="true">
+            <svg class="icon"><use href="#i-alert"></use></svg>
+          </span>
+          <div class="alert-info">
+            <strong>Doanh thu tuyến Hà Nội ↔ Sapa tụt 24%</strong>
+            <span>Giảm liên tiếp 3 ngày · cần rà soát giá và số chuyến phụ</span>
+          </div>
+          <div class="alert-side">
+            <span class="badge badge--red">Cao</span>
+            <span class="alert-time">14:20</span>
+          </div>
+        </li>
+        <li class="alert-item alert-item--orange">
+          <span class="alert-icon" aria-hidden="true">
+            <svg class="icon"><use href="#i-user-check"></use></svg>
+          </span>
+          <div class="alert-info">
+            <strong>Tài xế Phạm Minh D. huỷ 3 chuyến liên tiếp</strong>
+            <span>Rủi ro với 12 khách đã đặt · tự động tạm khoá nhận chuyến</span>
+          </div>
+          <div class="alert-side">
+            <span class="badge badge--orange">Trung bình</span>
+            <span class="alert-time">11:45</span>
+          </div>
+        </li>
+        <li class="alert-item alert-item--sky">
+          <span class="alert-icon" aria-hidden="true">
+            <svg class="icon"><use href="#i-clock"></use></svg>
+          </span>
+          <div class="alert-info">
+            <strong>5 chuyến khuya mai chưa phân tài xế</strong>
+            <span>Tuyến Hà Nội ↔ Hải Phòng 23:30–04:00 · đề nghị phân ca sớm</span>
+          </div>
+          <div class="alert-side">
+            <span class="badge badge--sky">Theo dõi</span>
+            <span class="alert-time">06:30</span>
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <article class="panel reveal" aria-labelledby="timelineTitle">
+      <div class="panel-head">
+        <div>
+          <h2 id="timelineTitle">Hoạt động gần đây</h2>
+          <p>Nhật ký hệ thống hôm nay</p>
+        </div>
+      </div>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-dot timeline-dot--green" aria-hidden="true">
+            <svg class="icon"><use href="#i-check"></use></svg>
+          </span>
+          <div class="timeline-body">
+            <p>Hồ sơ tài xế <strong>Nguyễn Văn M.</strong> được duyệt</p>
+            <span>16:42 · bởi Quỳnh Anh</span>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot timeline-dot--orange" aria-hidden="true">
+            <svg class="icon"><use href="#i-message"></use></svg>
+          </span>
+          <div class="timeline-body">
+            <p>Khiếu nại <strong>#KN-2311</strong> chuyển bộ phận vận hành</p>
+            <span>15:58 · tự động</span>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot timeline-dot--red" aria-hidden="true">
+            <svg class="icon"><use href="#i-alert"></use></svg>
+          </span>
+          <div class="timeline-body">
+            <p>Cảnh báo doanh thu tuyến <strong>Hà Nội ↔ Sapa</strong></p>
+            <span>14:20 · hệ thống</span>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot timeline-dot--sky" aria-hidden="true">
+            <svg class="icon"><use href="#i-wallet"></use></svg>
+          </span>
+          <div class="timeline-body">
+            <p>Yêu cầu bồi thường <strong>#BT-0872</strong> đã tiếp nhận</p>
+            <span>11:05 · bởi Minh Tuấn</span>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot timeline-dot--sky" aria-hidden="true">
+            <svg class="icon"><use href="#i-chart-bars"></use></svg>
+          </span>
+          <div class="timeline-body">
+            <p>Báo cáo doanh thu <strong>tuần 43</strong> sẵn sàng tải xuống</p>
+            <span>09:30 · hệ thống</span>
+          </div>
+        </li>
+      </ol>
+    </article>
+  </section>
+</div>
+    </main>
+  </div>
+</div>
+
+{{js}}
+</body>
+</html>

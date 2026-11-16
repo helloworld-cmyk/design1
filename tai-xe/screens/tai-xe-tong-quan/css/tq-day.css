@@ -1,0 +1,44 @@
+/* ================= Thông tin bổ trợ lịch tuần ================= */
+
+.tqw-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.tqw-note > div {
+  min-width: 0;
+}
+
+.tqw-note strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.tqw-note p {
+  margin-top: 6px;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--slate-600);
+}
+
+@media (max-width: 640px) {
+  .tqw-note {
+    gap: 12px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tqw-note {
+    padding: 16px;
+  }
+}

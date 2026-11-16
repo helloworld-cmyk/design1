@@ -1,0 +1,94 @@
+/* ================= Đặt chỗ thành công (khách hàng) ================= */
+
+.success-page {
+  padding: clamp(24px, 3.5vw, 40px) 0 clamp(36px, 5vw, 56px);
+}
+
+/* ---------- Khối thành công ---------- */
+
+.success-hero {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.success-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: var(--green-50);
+  color: var(--green-600);
+  box-shadow: inset 0 0 0 1px var(--green-100);
+  animation: pulse 2.6s var(--ease) infinite;
+}
+
+.success-icon .icon {
+  width: 28px;
+  height: 28px;
+}
+
+.success-hero .badge {
+  margin-top: 14px;
+}
+
+.success-hero .badge .icon {
+  width: 13px;
+  height: 13px;
+}
+
+.success-hero h1 {
+  margin-top: 8px;
+  font-size: clamp(1.85rem, 3.2vw, 2.65rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.032em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+/* ---------- Lưới thân trang ---------- */
+
+.success-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  max-width: 820px;
+  margin: clamp(16px, 2.5vw, 24px) auto 0;
+}
+
+.success-main {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+/* ---------- Hành động sau đặt chỗ ---------- */
+
+.success-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+  .success-actions .btn {
+    flex: 1 1 calc(50% - 6px);
+  }
+}
+
+@media (max-width: 400px) {
+  .success-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .success-actions .btn {
+    width: 100%;
+  }
+}

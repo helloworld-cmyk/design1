@@ -1,0 +1,40 @@
+/* ================= Hero visual (route art + vị trí chip trong hero) =================
+   Component .float-chip / .chip-icon đã nâng cấp dùng chung nhóm:
+   khach-hang/css/float-chip.css (rule §1 — dùng bởi ≥2 màn). */
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 520px;
+  padding: 20px 24px;
+}
+
+.route-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.route-path {
+  animation: dash 22s linear infinite;
+}
+
+.route-path-2 {
+  animation-duration: 30s;
+  animation-direction: reverse;
+}
+
+.chip-verified {
+  top: 34px;
+  left: -16px;
+}
+
+.chip-save {
+  right: -10px;
+  bottom: 34px;
+  animation-delay: -3.5s;
+}
